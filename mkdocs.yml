@@ -1,0 +1,11 @@
+site_name: Modulo Sum
+
+nav: 
+  - index.md
+  - reference.md
+
+plugins:
+  - mkdocstrings
+
+theme:
+  name: "material"
