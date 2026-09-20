@@ -10,26 +10,28 @@
         <meta name="author" content="Orlando Ismael Benavides Renault">
       
       
-        <link rel="canonical" href="https://benavides-renault.github.io/PrimerRepoF/">
+        <link rel="canonical" href="https://benavides-renault.github.io/PrimerRepoF/explanation/">
       
       
+        <link rel="prev" href="..">
       
-        <link rel="next" href="explanation/">
+      
+        <link rel="next" href="../tutorials/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Tarea 2: Cuadratura gaussiana</title>
+        <title>Método numérico - Tarea 2: Cuadratura gaussiana</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -48,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tarea-2-cuadratura-gaussiana-documentacion-de-codigo-y-git" class="md-skip">
+        <a href="#explicacion-del-metodo-numerico" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -84,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="." title="Tarea 2: Cuadratura gaussiana" class="md-header__button md-logo" aria-label="Tarea 2: Cuadratura gaussiana" data-md-component="logo">
+    <a href=".." title="Tarea 2: Cuadratura gaussiana" class="md-header__button md-logo" aria-label="Tarea 2: Cuadratura gaussiana" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introducción
+              Método numérico
             
           </span>
         </div>
@@ -194,7 +196,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Tarea 2: Cuadratura gaussiana" class="md-nav__button md-logo" aria-label="Tarea 2: Cuadratura gaussiana" data-md-component="logo">
+    <a href=".." title="Tarea 2: Cuadratura gaussiana" class="md-nav__button md-logo" aria-label="Tarea 2: Cuadratura gaussiana" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -221,6 +223,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -240,7 +269,7 @@
   <span class="md-ellipsis">
     
   
-    Introducción
+    Método numérico
   
 
     
@@ -251,14 +280,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Introducción
+    Método numérico
   
 
     
@@ -284,10 +313,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
+  <a href="#1-objetivo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objetivo
+        1. Objetivo
       
     </span>
   </a>
@@ -295,10 +324,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#organizacion" class="md-nav__link">
+  <a href="#2-puntos-y-pesos-de-legendre" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Organización
+        2. Puntos y pesos de Legendre
       
     </span>
   </a>
@@ -306,10 +335,65 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resultado" class="md-nav__link">
+  <a href="#3-escalar-el-intervalo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resultado
+        3. Escalar el intervalo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-evaluar-la-suma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Evaluar la suma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-comprobacion-analitica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Comprobación analítica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-con-cual-n-se-alcanza-el-resultado-exacto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. ¿Con cuál N se alcanza el resultado exacto?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Pruebas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material de referencia
       
     </span>
   </a>
@@ -331,34 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="explanation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Método numérico
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="tutorials/" class="md-nav__link">
+      <a href="../tutorials/" class="md-nav__link">
         
   
   
@@ -385,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/" class="md-nav__link">
+      <a href="../reference/" class="md-nav__link">
         
   
   
@@ -432,10 +489,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
+  <a href="#1-objetivo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objetivo
+        1. Objetivo
       
     </span>
   </a>
@@ -443,10 +500,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#organizacion" class="md-nav__link">
+  <a href="#2-puntos-y-pesos-de-legendre" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Organización
+        2. Puntos y pesos de Legendre
       
     </span>
   </a>
@@ -454,10 +511,65 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resultado" class="md-nav__link">
+  <a href="#3-escalar-el-intervalo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resultado
+        3. Escalar el intervalo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-evaluar-la-suma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Evaluar la suma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-comprobacion-analitica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Comprobación analítica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-con-cual-n-se-alcanza-el-resultado-exacto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. ¿Con cuál N se alcanza el resultado exacto?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Pruebas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material de referencia
       
     </span>
   </a>
@@ -484,25 +596,148 @@
   
 
 
-<h1 id="tarea-2-cuadratura-gaussiana-documentacion-de-codigo-y-git">Tarea 2: Cuadratura gaussiana, documentación de código y Git</h1>
-<p><strong>Orlando Ismael Benavides Renault — C11025</strong></p>
-<h2 id="objetivo">Objetivo</h2>
-<p>Calcular numéricamente la integral</p>
-<div class="arithmatex">\[I=\int_1^3 [x^6-x^2\sin(2x)]\,dx\]</div>
-<p>utilizando cuadratura de Gauss-Legendre. Los puntos y pesos se calculan en [-1, 1] y se transforman al intervalo de integración.</p>
-<h2 id="organizacion">Organización</h2>
+<h1 id="explicacion-del-metodo-numerico">Explicación del método numérico</h1>
+<h2 id="1-objetivo">1. Objetivo</h2>
+<p>Aproximo una integral mediante una suma de valores de la función multiplicados por pesos:</p>
+<div class="arithmatex">\[\int_a^b f(x)\,dx\approx\sum_{k=1}^{N}w'_k f(x'_k).\]</div>
+<p><code>N</code> indica la cantidad de puntos de muestreo. Los puntos no tienen que estar
+igualmente separados. Los pesos indican cuánto aporta cada evaluación a la suma.</p>
+<h2 id="2-puntos-y-pesos-de-legendre">2. Puntos y pesos de Legendre</h2>
+<p>En el intervalo original [-1, 1], los puntos son las raíces del polinomio de Legendre de grado N:</p>
+<div class="arithmatex">\[P_N(x_k)=0,\qquad w_k=\frac{2}{(1-x_k^2)[P'_N(x_k)]^2}.\]</div>
+<p>Calculo los puntos y pesos mediante:</p>
+<pre><code class="language-python">x, w = np.polynomial.legendre.leggauss(N)
+</code></pre>
+<ol>
+<li><code>np.polynomial.legendre</code> contiene herramientas para polinomios de Legendre.</li>
+<li><code>leggauss(N)</code> devuelve los N puntos y sus N pesos.</li>
+<li><code>x, w</code> guarda ambos arreglos por separado.</li>
+<li>Mi función <code>gaussxw(N)</code> devuelve esos arreglos mediante <code>return x, w</code>.</li>
+</ol>
+<h2 id="3-escalar-el-intervalo">3. Escalar el intervalo</h2>
+<p>Los puntos anteriores pertenecen a [-1, 1], pero necesito integrar en [1, 3]. Uso:</p>
+<div class="arithmatex">\[x'_k=\frac{b-a}{2}x_k+\frac{b+a}{2},\qquad w'_k=\frac{b-a}{2}w_k.\]</div>
+<p>Para a = 1 y b = 3, resulta:</p>
+<div class="arithmatex">\[x'_k=x_k+2,\qquad w'_k=w_k.\]</div>
+<p>Los pesos quedan iguales en este caso porque ambos intervalos tienen longitud 2.
+La función <code>gaussxwab(a, b, x, w)</code> mantiene la fórmula general para otros intervalos.</p>
+<h2 id="4-evaluar-la-suma">4. Evaluar la suma</h2>
+<pre><code class="language-python">x, w = gaussxw(N)
+xp, wp = gaussxwab(1, 3, x, w)
+resultado = np.sum(wp * funcion(xp))
+</code></pre>
+<ol>
+<li>Obtengo puntos y pesos en [-1, 1].</li>
+<li>Transformo ambos al intervalo del problema.</li>
+<li><code>funcion(xp)</code> evalúa todos los puntos de manera vectorial.</li>
+<li><code>wp * funcion(xp)</code> multiplica cada valor por su peso.</li>
+<li><code>np.sum</code> suma todas las contribuciones.</li>
+</ol>
+<p>En Python uso <code>**</code> para elevar a una potencia. <code>np.sin(2*x)</code> calcula el seno
+en radianes. No necesito un ciclo para evaluar cada punto por separado.
+El ciclo del programa principal se utiliza para comparar diferentes valores de N.</p>
+<h2 id="5-comprobacion-analitica">5. Comprobación analítica</h2>
+<p>Para comparar necesito una referencia independiente de la cuadratura.
+Integro el término x⁶ directamente y el término x² sen(2x) por partes dos veces:</p>
+<div class="arithmatex">\[\int x^2\sin(2x)\,dx=-\frac{x^2}{2}\cos(2x)
++\frac{x}{2}\sin(2x)+\frac14\cos(2x).\]</div>
+<p>Por tanto, una primitiva de la función completa es:</p>
+<div class="arithmatex">\[F(x)=\frac{x^7}{7}+\left(\frac{x^2}{2}-\frac14\right)\cos(2x)
+-\frac{x}{2}\sin(2x).\]</div>
+<p>La integral exacta se puede expresar como:</p>
+<div class="arithmatex">\[I=\frac{2186}{7}+\frac{17}{4}\cos(6)-\frac14\cos(2)
+-\frac32\sin(6)+\frac12\sin(2).\]</div>
+<p>Al evaluar esa expresión en la computadora obtengo aproximadamente
+317.3442466738264. Esa representación decimal tiene errores de redondeo.</p>
+<h2 id="6-con-cual-n-se-alcanza-el-resultado-exacto">6. ¿Con cuál N se alcanza el resultado exacto?</h2>
+<p>La regla de N puntos integra exactamente polinomios de grado hasta 2N−1
+(en aritmética exacta). Para x⁶ bastaría N = 4, pues 2(4)−1 = 7.
+Sin embargo, la función completa incluye un seno y no es un polinomio.
+Por eso no puedo concluir que N = 4 resuelva exactamente toda la integral.</p>
+<p>Defino el error absoluto y la condición de aceptación:</p>
+<div class="arithmatex">\[E_N=|I_N-I_{\mathrm{ref}}|,\qquad E_N&lt;10^{-10}.\]</div>
+<p>No existe una garantía de exactitud matemática para esta función por la regla
+polinómica. Respondo en términos de precisión numérica: <strong>N = 8 es el primer N
+probado que cumple la tolerancia elegida</strong>. Con N = 9 el error ya es del orden
+de 10⁻¹³; las últimas cifras dependen del redondeo de punto flotante.
+Aumentar N no garantiza que esas últimas cifras mejoren de manera monótona.</p>
+<h2 id="7-pruebas">7. Pruebas</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">N</th>
+<th style="text-align: right;">Integral aproximada</th>
+<th style="text-align: right;">Error absoluto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">134.0544199624634</td>
+<td style="text-align: right;">1.833e+02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">306.8199344959197</td>
+<td style="text-align: right;">1.052e+01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">317.2641517338290</td>
+<td style="text-align: right;">8.009e-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">317.3453903341579</td>
+<td style="text-align: right;">1.144e-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">317.3442267219694</td>
+<td style="text-align: right;">1.995e-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">317.3442468899962</td>
+<td style="text-align: right;">2.162e-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">317.3442466722262</td>
+<td style="text-align: right;">1.600e-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">317.3442466738354</td>
+<td style="text-align: right;">9.038e-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">317.3442466738262</td>
+<td style="text-align: right;">1.705e-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">317.3442466738264</td>
+<td style="text-align: right;">0.000e+00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">317.3442466738263</td>
+<td style="text-align: right;">5.684e-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">317.3442466738265</td>
+<td style="text-align: right;">1.137e-13</td>
+</tr>
+</tbody>
+</table>
+<h2 id="material-de-referencia">Material de referencia</h2>
 <ul>
-<li><a href="explanation/">Método numérico</a>: puntos, pesos, cambio de intervalo y precisión.</li>
-<li><a href="tutorials/">Ejemplo de uso</a>: ejecución del programa y resultados.</li>
-<li><a href="reference/">Referencia de funciones</a>: documentación automática de los docstrings.</li>
+<li>Notebook suministrado: <code>GaussianCuadratureAndFitting(1).ipynb</code>, sección Cuadratura Gaussiana.</li>
+<li>Mark Newman, <em>Computational Physics</em>, capítulo 5 y apéndice C, citados en el notebook.</li>
 </ul>
-<p>El módulo <code>cuadrature.py</code> implementa el método numérico.
-La función trigonométrica se evalúa en radianes.</p>
-<h2 id="resultado">Resultado</h2>
-<p>Obtengo aproximadamente <strong>317.3442466738264</strong>.
-Defino una tolerancia absoluta de <strong>10⁻¹⁰</strong>; el primer valor que la cumple
-al probar N = 1, 2, ..., 12 es <strong>N = 8</strong>. Esta tolerancia es una elección
-explícita para la comprobación, no un dato proporcionado por el enunciado.</p>
 
 
 
@@ -552,12 +787,12 @@ explícita para la comprobación, no un dato proporcionado por el enunciado.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

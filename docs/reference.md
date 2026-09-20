@@ -1,1 +1,3 @@
-::: sum.sum
+# Referencia de funciones
+
+::: cuadrature

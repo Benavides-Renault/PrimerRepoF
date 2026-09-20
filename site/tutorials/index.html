@@ -10,22 +10,28 @@
         <meta name="author" content="Orlando Ismael Benavides Renault">
       
       
+        <link rel="canonical" href="https://benavides-renault.github.io/PrimerRepoF/tutorials/">
       
+      
+        <link rel="prev" href="../explanation/">
+      
+      
+        <link rel="next" href="../reference/">
       
       
         
       
       
-      <link rel="icon" href="/PrimerRepoF/assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Tarea 2: Cuadratura gaussiana</title>
+        <title>Ejemplo de uso - Tarea 2: Cuadratura gaussiana</title>
       
     
     
-      <link rel="stylesheet" href="/PrimerRepoF/assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -44,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="/PrimerRepoF/assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("/PrimerRepoF/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,6 +69,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ejemplo-de-uso" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -75,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="/PrimerRepoF/." title="Tarea 2: Cuadratura gaussiana" class="md-header__button md-logo" aria-label="Tarea 2: Cuadratura gaussiana" data-md-component="logo">
+    <a href=".." title="Tarea 2: Cuadratura gaussiana" class="md-header__button md-logo" aria-label="Tarea 2: Cuadratura gaussiana" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -95,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Ejemplo de uso
             
           </span>
         </div>
@@ -185,7 +196,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/PrimerRepoF/." title="Tarea 2: Cuadratura gaussiana" class="md-nav__button md-logo" aria-label="Tarea 2: Cuadratura gaussiana" data-md-component="logo">
+    <a href=".." title="Tarea 2: Cuadratura gaussiana" class="md-nav__button md-logo" aria-label="Tarea 2: Cuadratura gaussiana" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -215,7 +226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/PrimerRepoF/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -242,7 +253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/PrimerRepoF/explanation/" class="md-nav__link">
+      <a href="../explanation/" class="md-nav__link">
         
   
   
@@ -266,10 +277,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/PrimerRepoF/tutorials/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejemplo de uso
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -285,6 +323,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-ejecutar-el-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Ejecutar el programa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-usar-las-funciones-desde-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Usar las funciones desde Python
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -296,7 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/PrimerRepoF/reference/" class="md-nav__link">
+      <a href="../reference/" class="md-nav__link">
         
   
   
@@ -333,6 +424,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-ejecutar-el-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Ejecutar el programa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-usar-las-funciones-desde-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Usar las funciones desde Python
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -345,8 +479,68 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="ejemplo-de-uso">Ejemplo de uso</h1>
+<h2 id="objetivo">Objetivo</h2>
+<p>Ejecutar el programa y comprobar el resultado con diferentes valores de N.</p>
+<h2 id="1-ejecutar-el-programa">1. Ejecutar el programa</h2>
+<pre><code class="language-bash">python cuadrature.py
+</code></pre>
+<p>Salida obtenida durante la comprobación (las últimas cifras pueden variar):</p>
+<pre><code class="language-text">Valor de referencia: 317.3442466738264
+Tolerancia absoluta: 1e-10
+  N                Integral    Error absoluto
+  1       134.0544199624634         1.833e+02
+  2       306.8199344959197         1.052e+01
+  3       317.2641517338290         8.009e-02
+  4       317.3453903341579         1.144e-03
+  5       317.3442267219694         1.995e-05
+  6       317.3442468899962         2.162e-07
+  7       317.3442466722262         1.600e-09
+  8       317.3442466738354         9.038e-12
+  9       317.3442466738262         1.705e-13
+ 10       317.3442466738264         0.000e+00
+ 11       317.3442466738263         5.684e-14
+ 12       317.3442466738265         1.137e-13
+Primer N que cumple la tolerancia: 8
+La tolerancia numérica no equivale a exactitud matemática.
+
+</code></pre>
+<p>El programa prueba todos los valores del 1 al 12 y conserva el primero que
+cumple la tolerancia. <code>abs</code> calcula el valor absoluto de la diferencia.
+<code>range(1, 13)</code> incluye el 1 y excluye el 13.</p>
+<h2 id="2-usar-las-funciones-desde-python">2. Usar las funciones desde Python</h2>
+<pre><code class="language-python">from cuadrature import integrar, valor_referencia
+
+resultado = integrar(8)
+error = abs(resultado - valor_referencia())
+print(f&quot;Integral: {resultado:.10f}&quot;)
+print(f&quot;Cumple la tolerancia: {error &lt; 1e-10}&quot;)
+# Integral: 317.3442466738
+# Cumple la tolerancia: True
+</code></pre>
+<p><code>.10f</code> muestra diez cifras decimales. La comparación devuelve <code>True</code> si
+el error es menor que la tolerancia. Al importar el módulo no se imprime la
+tabla: el bloque <code>if __name__ == "__main__":</code> solo se ejecuta al llamar al script.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -383,12 +577,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/PrimerRepoF/", "features": [], "search": "/PrimerRepoF/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="/PrimerRepoF/assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="/PrimerRepoF/javascripts/mathjax.js"></script>
+        <script src="../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

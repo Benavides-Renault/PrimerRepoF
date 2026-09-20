@@ -1,11 +1,31 @@
-site_name: Modulo Sum
-
-nav: 
-  - index.md
-  - reference.md
-
-plugins:
-  - mkdocstrings
-
+site_name: "Tarea 2: Cuadratura gaussiana"
+site_author: Orlando Ismael Benavides Renault
+site_url: https://benavides-renault.github.io/PrimerRepoF/
+repo_url: https://github.com/Benavides-Renault/PrimerRepoF
+nav:
+  - Introducción: index.md
+  - Método numérico: explanation.md
+  - Ejemplo de uso: tutorials.md
+  - Referencia de funciones: reference.md
 theme:
-  name: "material"
+  name: material
+  language: es
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["."]
+          options:
+            docstring_style: google
+            docstring_options:
+              returns_named_value: false
+              returns_multiple_items: false
+            members_order: source
+            show_source: true
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
